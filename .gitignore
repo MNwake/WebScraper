@@ -1,5 +1,2 @@
 .env
 venv
-response_data.json
-proxies_status.json
-products.json
