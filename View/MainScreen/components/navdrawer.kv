@@ -1,0 +1,95 @@
+<DrawerItem>
+    active_indicator_color: "#e7e4c0"
+
+    MDNavigationDrawerItemLeadingIcon:
+        icon: root.icon
+#        theme_icon_color: "Custom"
+#        icon_color: "#4a4939"
+
+    MDNavigationDrawerItemText:
+        text: root.text
+#        theme_text_color: "Custom"
+#        text_color: "#4a4939"
+
+    MDNavigationDrawerItemTrailingText:
+        text: root.trailing_text
+
+
+<DrawerLabel>
+    adaptive_height: True
+    padding: "18dp", 0, 0, "12dp"
+
+    MDNavigationDrawerItemLeadingIcon:
+        icon: root.icon
+#        theme_icon_color: "Custom"
+#        icon_color: "#4a4939"
+        pos_hint: {"center_y": .5}
+
+    MDNavigationDrawerLabel:
+        text: root.text
+#        theme_text_color: "Custom"
+#        text_color: "#4a4939"
+        pos_hint: {"center_y": .5}
+        padding: "6dp", 0, "16dp", 0
+#        theme_line_height: "Custom"
+#        line_height: 0
+
+    MDNavigationDrawerItemTrailingText:
+        text: root.trailing_text
+
+<NavigationDrawer>
+
+    MDNavigationDrawerMenu:
+        id: menu_bar
+        spacing: '24dp'
+
+        MDNavigationDrawerHeader:
+            orientation: "vertical"
+            padding: 0, 0, 0, "12dp"
+            adaptive_height: True
+
+            MDLabel:
+                text: "Settings"
+                theme_text_color: "Custom"
+                theme_line_height: "Custom"
+                line_height: 0
+                text_color: "#4a4939"
+                adaptive_height: True
+                padding_x: "16dp"
+                font_style: "Display"
+                role: "small"
+
+            MDLabel:
+                text: "Configure your app"
+                padding_x: "18dp"
+                adaptive_height: True
+                font_style: "Title"
+                role: "large"
+
+        MDNavigationDrawerDivider:
+
+        MDTextField:
+            mode: "outlined"
+            pos_hint: {"center_x": .5, "center_y": .5}
+            padding_y: '20dp'
+            on_text: root.update_zip_code(self, self.text)
+
+            MDTextFieldLeadingIcon:
+                icon: "map-marker"
+
+            MDTextFieldHintText:
+                text: "Zip Code"
+
+            MDTextFieldMaxLengthText:
+                max_text_length: 5
+
+        MDNavigationDrawerDivider:
+
+        MDBoxLayout:
+            id: metrics
+            orientation: 'vertical'
+            adaptive_height: True
+
+
+
+

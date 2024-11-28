@@ -1,0 +1,112 @@
+[
+    {
+        "ip": "209.127.44.196",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "154.9.42.215",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "23.236.212.86",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "154.9.42.34",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "23.236.212.116",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "154.9.42.150",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "193.39.90.163",
+        "port": 8800,
+        "sites": {
+            "home_depot": false,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": false,
+        "alert_callback": null
+    },
+    {
+        "ip": "209.127.44.48",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "154.9.42.155",
+        "port": 8800,
+        "sites": {
+            "home_depot": true,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": true,
+        "alert_callback": null
+    },
+    {
+        "ip": "193.39.90.8",
+        "port": 8800,
+        "sites": {
+            "home_depot": false,
+            "lowes": false,
+            "amazon": true
+        },
+        "alert": false,
+        "alert_callback": null
+    }
+]

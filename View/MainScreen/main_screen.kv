@@ -1,0 +1,63 @@
+<MainScreenView>:
+    MDBoxLayout:
+        orientation: 'vertical'
+#
+        # Top Status Bar
+        MDTopAppBar:
+            type: "small"
+
+            MDTopAppBarLeadingButtonContainer:
+                MDActionTopAppBarButton:
+                    id: start_stop_button
+                    icon: "play-circle-outline"
+                    on_release: root.toggle_scraper()
+
+            MDTopAppBarTitle:
+                text: "Webscraper"
+                adaptive_width: False
+                size_hint_x: 1
+
+            MDTopAppBarTrailingButtonContainer:
+                MDActionTopAppBarButton:
+                    id: refresh_button
+                    icon: "refresh"
+                    on_release: root.refresh_proxies()
+
+                MDActionTopAppBarButton:
+                    id: settings_button
+                    icon: "cog-outline"
+                    on_release: nav_drawer.set_state("open")
+
+#        ProductCard:
+#            item_id: "12345"
+#            brand_name: "BrandX"
+#            product_name: "ProductY"
+#            product_price: "25.00"
+#            original_price: "30.00"
+#            dollar_off: "5.00"
+#            percentage_off: "16.67"
+#            image_url: "https://example.com/image.jpg"
+#            url: "https://example.com/product"
+#            category_hierarchy: "Category > Subcategory"
+#            unit_of_measure: "Each"
+#            product_fulfillment: "In Stock"
+
+        RecycleView:
+            md_bg_color: 'blue'
+            id: product_list
+            viewclass: 'ProductCard'
+
+            RecycleBoxLayout:
+                orientation: 'vertical'
+                default_size: None, dp(120)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: dp(10)
+
+
+    NavigationDrawer:
+        id: nav_drawer
+        anchor: 'right'
+        radius: 0, dp(16), dp(16), 0
+        update_zip_code: root.controller.update_zip_code

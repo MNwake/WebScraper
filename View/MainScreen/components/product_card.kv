@@ -1,0 +1,60 @@
+<ProductCard>
+    size_hint_y: None
+    height: '120dp'
+    padding_x: '12dp'
+    spacing: '12dp'
+
+    MDBoxLayout:
+        size_hint_x: None
+        width: self.height
+        AsyncImage:
+            source: root.image_url
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: '8dp'
+
+        MDLabel:
+            text: f"{root.brand_name} {root.product_name}"
+            theme_text_color: "Primary"
+            halign: "left"
+
+        MDBoxLayout:
+            MDGridLayout
+                cols: 3
+
+                MDLabel:
+                    text: root.product_price
+                    theme_text_color: "Secondary"
+                    halign: "left"
+
+                MDLabel:
+                    text: root.original_price
+                    theme_text_color: "Secondary"
+                    halign: "left"
+
+                MDLabel:
+                    text: root.amazon_price
+                    theme_text_color: "Secondary"
+                    halign: "left"
+
+                MDLabel:
+                    text: root.dollar_off
+                    theme_text_color: "Hint"
+                    halign: "left"
+
+                MDLabel:
+                    text: root.percentage_off
+                    theme_text_color: "Hint"
+                    halign: "left"
+
+                MDLabel:
+                    text: root.amazon_match
+                    theme_text_color: "Hint"
+                    halign: "left"
+
+
+
+
+
+
