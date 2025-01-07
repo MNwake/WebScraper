@@ -1,7 +1,8 @@
 from typing import List
 
 from Model.base_model import BaseScreenModel
-from Play.models.item import Product
+
+from model.item import Product
 
 
 class MainScreenModel(BaseScreenModel):

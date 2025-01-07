@@ -1,10 +1,11 @@
 import json
-import os
 
 import requests
 import tiktoken
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
+
+from config.config import Config
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -17,7 +18,7 @@ def count_tokens(prompt):
 
 
 class ChatGPTController:
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = Config.OPENAI_API_KEY
 
     def __init__(self):
         self.client = AsyncOpenAI(api_key=self.api_key)

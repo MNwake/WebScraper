@@ -1,4 +1,3 @@
-import os
 import time
 from enum import Enum
 from typing import Tuple
@@ -6,6 +5,8 @@ from typing import Tuple
 import requests
 from dotenv import load_dotenv
 from uszipcode import SearchEngine
+
+from config.config import Config
 
 load_dotenv()
 
@@ -38,8 +39,8 @@ class Websites(Enum):
 
 
 def google_search(search_query, retries=5, backoff_factor=1, num_results=1):
-    search_engine = os.getenv("SEARCH_ENGINE")
-    google_api_key = os.getenv("GOOGLE_API_KEY")
+    search_engine = Config.SEARCH_ENGINE
+    google_api_key = Config.GOOGLE_API_KEY
 
     if not search_engine or not google_api_key:
         print("Environment variables for search engine or API key are not set.")

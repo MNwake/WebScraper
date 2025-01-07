@@ -11,9 +11,9 @@ from playwright.async_api import async_playwright
 from pydantic import ValidationError
 
 from Play.base_scraper import BaseScraper
-from Play.models.home_depot import HomeDepotItem
-from Play.models.item import Product
-from Play.proxies import Websites, ProxyManager
+from Play.proxies.proxies import Websites, ProxyManager
+from model.home_depot import HomeDepotItem
+from model.item import Product
 
 
 class SortByOption(Enum):

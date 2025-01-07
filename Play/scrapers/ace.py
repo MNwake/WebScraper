@@ -4,9 +4,9 @@ from typing import List
 from playwright.async_api import async_playwright
 
 from Play.base_scraper import BaseScraper
-from Play.models.item import Product
-from Play.proxies import ProxyManager
+from Play.proxies.proxies import ProxyManager
 from Utility.utils import Websites
+from model.item import Product
 
 
 class AceScraper(BaseScraper):

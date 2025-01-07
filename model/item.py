@@ -2,8 +2,8 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
-from Play.models.amazon import AmazonItem
 from Utility.utils import Websites
+from model.amazon import AmazonItem
 
 
 class Product(BaseModel):
