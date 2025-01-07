@@ -3,7 +3,7 @@ from typing import List, Optional
 
 from pydantic import BaseModel, Field
 
-from Utility.utils import Websites
+from utility.utils import Websites
 
 
 class Identifier(BaseModel):

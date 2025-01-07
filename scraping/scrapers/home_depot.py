@@ -10,10 +10,10 @@ from fake_useragent import UserAgent
 from playwright.async_api import async_playwright
 from pydantic import ValidationError
 
-from Play.base_scraper import BaseScraper
-from Play.proxies.proxies import Websites, ProxyManager
 from model.home_depot import HomeDepotItem
 from model.item import Product
+from scraping.base_scraper import BaseScraper
+from scraping.proxies.proxies import Websites, ProxyManager
 
 
 class SortByOption(Enum):

@@ -1,9 +1,9 @@
 from kivy.clock import Clock
 from kivy.properties import BooleanProperty, DictProperty, ListProperty
 
-from View.MainScreen.components.navdrawer import DrawerItem, DrawerLabel  # NOQA
-from View.MainScreen.components.product_card import ProductCard  # NOQA
-from View.base_screen import BaseScreenView
+from view.base_screen import BaseScreenView
+from view.main_screen.components.navdrawer import DrawerItem, DrawerLabel  # NOQA
+from view.main_screen.components.product_card import ProductCard  # NOQA
 
 
 class MainScreenView(BaseScreenView):

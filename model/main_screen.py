@@ -1,7 +1,6 @@
 from typing import List
 
-from Model.base_model import BaseScreenModel
-
+from model.base_model import BaseScreenModel
 from model.item import Product
 
 

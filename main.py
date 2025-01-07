@@ -14,7 +14,7 @@ https://en.wikipedia.org/wiki/Model–view–controller
 from kivymd.app import MDApp
 from kivymd.uix.screenmanager import MDScreenManager
 
-from View.screens import screens
+from view.screens import screens
 
 
 class App(MDApp):

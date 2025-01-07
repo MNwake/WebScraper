@@ -3,7 +3,7 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
-from Utility.utils import Websites
+from utility.utils import Websites
 
 
 class AmazonItem(BaseModel):

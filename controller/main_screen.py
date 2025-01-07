@@ -2,15 +2,15 @@ import asyncio
 import threading
 from collections import deque
 
-from Chat.controller import ChatGPTController
-from Model.main_screen import MainScreenModel
 from uszipcode import SearchEngine
 
-from Play.proxies.proxies import ProxyManager
-from Play.scrapers.amazon import AmazonScraper
-from Play.scrapers.home_depot import HomeDepotScraper
-from View.MainScreen.main_screen import MainScreenView
+from controller.chatgpt_controller import ChatGPTController
 from model.item import Product
+from model.main_screen import MainScreenModel
+from scraping.proxies.proxies import ProxyManager
+from scraping.scrapers.amazon import AmazonScraper
+from scraping.scrapers.home_depot import HomeDepotScraper
+from view.main_screen.main_screen import MainScreenView
 
 
 class MainScreenController:

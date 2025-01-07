@@ -2,8 +2,8 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
-from Utility.utils import Websites
 from model.amazon import AmazonItem
+from utility.utils import Websites
 
 
 class Product(BaseModel):

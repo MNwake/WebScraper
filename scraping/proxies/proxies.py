@@ -8,7 +8,7 @@ from playwright.async_api import async_playwright
 from pydantic import BaseModel
 from uszipcode import SearchEngine
 
-from Utility.utils import Websites
+from utility.utils import Websites
 
 
 class Proxy(BaseModel):

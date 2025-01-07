@@ -2,8 +2,8 @@
 # of the screens of the application.
 
 
-from Model.main_screen import MainScreenModel
-from Controller.main_screen import MainScreenController
+from controller.main_screen import MainScreenController
+from model.main_screen import MainScreenModel
 
 screens = {
     "main screen": {

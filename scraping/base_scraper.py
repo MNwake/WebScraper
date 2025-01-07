@@ -4,9 +4,9 @@ from random import uniform
 
 from playwright.async_api import Browser, BrowserContext, Page
 
-from Play.exceptions import UserStoppedScraper
-from Play.proxies.proxies import Websites, ProxyManager
-from Utility.utils import ProxyError
+from scraping.exceptions import UserStoppedScraper
+from scraping.proxies.proxies import Websites, ProxyManager
+from utility.utils import ProxyError
 
 
 #
